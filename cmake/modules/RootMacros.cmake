@@ -706,7 +706,7 @@ function(ROOT_GENERATE_DICTIONARY dictionary)
       install(FILES ${rootmap_name}
                     DESTINATION ${shared_lib_install_dir} COMPONENT libraries)
     else()
-      install(FILES ${pcm_name} ${rootmap_name}
+      install(FILES ${pcm_name} ${rootmap_name} TYPE INCLUDE
                     DESTINATION ${shared_lib_install_dir} COMPONENT libraries)
     endif()
   endif()
